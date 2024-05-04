@@ -30,7 +30,7 @@ const UpdateFoodForm = () => {
         let quantity=formData.get('foodQuantity');
         let price=formData.get('foodPrice');
 
-        await axios.post(`http://localhost:5040/api/update/${id}`,{name:name,code:code,image:image,category:category,
+        await axios.post(`https://crud-api-vercel-server.vercel.app/api/update/${id}`,{name:name,code:code,image:image,category:category,
             quantity:parseFloat(quantity),price:parseFloat(price)})
         navigate('/')
     }
