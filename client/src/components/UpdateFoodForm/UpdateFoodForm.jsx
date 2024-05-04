@@ -15,7 +15,7 @@ const UpdateFoodForm = () => {
     }, []);
 
     const readOldData=async (id)=>{
-        let res=await axios.get(`http://localhost:5040/api/readOne/${id}`);
+        let res=await axios.get(`https://crud-api-vercel-server.vercel.app/api/readOne/${id}`);
         setOldData(res.data['data'][0])
     }
 

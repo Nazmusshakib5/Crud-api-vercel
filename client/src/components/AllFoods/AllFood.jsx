@@ -19,7 +19,7 @@ const AllFood = () => {
 
     }
     async function deleteData(id){
-        let res=await axios.get(`http://localhost:5040/api/delete/${id}`)
+        let res=await axios.get(`https://crud-api-vercel-server.vercel.app/api/delete/${id}`)
         await getFoodData();
     }
     return (
