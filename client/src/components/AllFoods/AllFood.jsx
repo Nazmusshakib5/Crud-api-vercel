@@ -14,7 +14,7 @@ const AllFood = () => {
         })()
     }, []);
     async function getFoodData(){
-        let res=await axios.get('http://localhost:5040/api/read');
+        let res=await axios.get('https://crud-api-vercel-server.vercel.app/api/read');
         setFood(res.data['data'])
 
     }
